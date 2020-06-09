@@ -1,0 +1,43 @@
+.footer {
+    &__copiright {
+        font-family: $main-font;
+        font-size: 14px;
+        color: #333333;
+    }
+    &__company-link {
+        color: #f38181;
+    }
+}
+.border-top {
+    @include space-between;
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #e5e5e5;
+    padding: 28px 0;
+}
+
+.subscribe-form {
+    display: flex;
+    &__email {
+        width: 232px;
+        height: 42px;
+        border: 1px solid rgb(231, 231, 231);
+        background-color: rgb(255, 255, 255);
+        &::placeholder {
+            @include font(15px, 300, 24px);
+            font-family: $secondary-font;
+            font-style: italic;
+            padding-left: 10px;
+        }
+    }
+}
+.modal__btn {
+    width: 150px;
+    height: 44px;
+    background-color: rgb(149, 225, 211);
+    border: none;
+    font-family: $main-font;
+    font-size: 14px;
+    color: $main-color;
+    text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+.company-services {
+    @include space-between;
+    flex-wrap: wrap;  
+    padding: 0;
+    margin: 0;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        background-repeat: no-repeat;
+        background-position: left 10px top;
+        padding-left: 65px;
+        &:not(:nth-child(n+4)) {
+            margin-bottom: 96px;
+        }
+    }
+    &__name,
+    &__descr {
+        margin: 0;
+    }
+    &__name {
+        font-family: $main-font;
+        font-size: 14px;
+        color: #333333;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        &_alarm {
+            background-image: url(../images/icons/alarm.svg)
+        }
+        &_graph {
+            background-image: url(../images/icons/graph.svg)
+        }
+        &_computer {
+            background-image: url(../images/icons/computer.svg)
+        }
+        &_book {
+            background-image: url(../images/icons/book.svg)
+        }
+        &_home {
+            background-image: url(../images/icons/home.svg)
+        }
+        &_image {
+            background-image: url(../images/icons/image.svg)
+        }
+    }
+    &__descr {
+        @include font(15px, 400, 24px);
+        font-family: $secondary-font;
+        color: $secondary-color;
+    }
+}
+
